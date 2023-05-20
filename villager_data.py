@@ -17,7 +17,7 @@ def all_species(filename):
     file = open(filename)
     for line in file:
         name = line.split("|")
-        species.add(name[0])
+        species.add(name[1])
 
     return species
 
@@ -32,8 +32,10 @@ def get_villagers_by_species(filename, search_string="All"):
     Return:
         - list[str]: a list of names
     """
-
     villagers = []
+    # TODO: replace this with your code
+   
+    
 
     # TODO: replace this with your code
 
@@ -109,4 +111,4 @@ def find_likeminded_villagers(filename, villager_name):
 
     # TODO: replace this with your code
 
-print(all_species("villagers.csv"))
+# print(all_species("villagers.csv"))
