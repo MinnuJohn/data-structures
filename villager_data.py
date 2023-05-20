@@ -111,4 +111,4 @@ def find_likeminded_villagers(filename, villager_name):
 
     # TODO: replace this with your code
 
-# print(all_species("villagers.csv"))
+print(all_species("villagers.csv"))
