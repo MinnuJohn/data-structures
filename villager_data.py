@@ -14,6 +14,10 @@ def all_species(filename):
     species = set()
 
     # TODO: replace this with your code
+    file = open(filename)
+    for line in file:
+        name = line.split("|")
+        species.add(name[0])
 
     return species
 
@@ -104,3 +108,5 @@ def find_likeminded_villagers(filename, villager_name):
     """
 
     # TODO: replace this with your code
+
+print(all_species("villagers.csv"))
