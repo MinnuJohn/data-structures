@@ -131,9 +131,20 @@ def find_likeminded_villagers(filename, villager_name):
         - set[str]: a set of names
 
     For example:
-        >>> find_likeminded_villagers('villagers.csv', 'Wendy')
+        >>>
         {'Bella', ..., 'Carmen'}
     """
 
     # TODO: replace this with your code
-
+    same_personality_name = set()
+    file = open('villagers.csv')
+    check_personality = ''
+    for line in file:
+        words = line.split("|")
+        personality = words[2]
+        name = words[0]
+        if name == villager_name:
+            check_personality = personality
+        if check_personality == personality:
+            same_personality_name.add(name)
+    return same_personality_name
