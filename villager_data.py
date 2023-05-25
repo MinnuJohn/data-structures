@@ -119,7 +119,7 @@ def find_motto(filename, villager_name):
         motto = words[4]
         if name == villager_name:
             return motto
-
+        
 def find_likeminded_villagers(filename, villager_name):
     """Return a set of villagers with the same personality as the given villager.
 
